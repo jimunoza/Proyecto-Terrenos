@@ -52,7 +52,7 @@ body, html {
     width: 100%;
     height: 100vh; /* Para que siempre ocupe la altura de la ventana */
     position: absolute;
-    top: 25%;
+    top: 15%;
     z-index: 2;
     color: white;
     text-align: left;
