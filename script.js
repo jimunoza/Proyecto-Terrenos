@@ -27,3 +27,23 @@ function showSlides() {
     }, 500); // El negro solo se muestra 1 segundo
   }, 5000); // La imagen permanece visible durante 5 segundos
 }
+
+
+let slideIndex2 = 0;
+
+function moveSlide(direction) {
+    const slides = document.getElementById('carousel-slide');
+    const totalSlides = slides.children.length;
+
+    slideIndex2 = (slideIndex2 + direction + totalSlides) % totalSlides;
+    const slideWidth = slides.children[0].clientWidth;
+
+    slides.style.transform = `translateX(-${slideIndex2 * slideWidth}px)`;
+}
+
+// Ajusta el tamaño del carrusel al redimensionar la ventana
+window.addEventListener('resize', () => {
+    const slides = document.getElementById('carousel-slide');
+    const slideWidth = slides.children[0].clientWidth;
+    slides.style.transform = `translateX(-${slideIndex2 * slideWidth}px)`;
+});

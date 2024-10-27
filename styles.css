@@ -106,10 +106,10 @@ h3.location {
 
 /* Sección de descripción */
 .description {
-    background-color: #f7f7f7;
+    background-color: #175451;
     padding: 4rem 0;
     text-align: center;
-    color: #333;
+    color: #fff;
 }
 
 .description h2 {
@@ -122,7 +122,7 @@ h3.location {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: #fff;
     margin-bottom: 1.5rem;
 }
 
@@ -166,4 +166,57 @@ h3.location {
     .contact-info {
         flex-direction: column;
     }
+}
+
+/* Estilo básico para el contenedor del carrusel */
+.carousel-container {
+    background-color: #175451;
+    width: 100%; /* Se adapta al ancho del contenedor padre */
+    max-width: 1024px; /* Tamaño máximo de las imágenes */
+    margin: 2rem auto; /* Centra el carrusel */
+    overflow: hidden;
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.carousel-container img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Corta la imagen para llenar el contenedor si es necesario */
+    display: block; /* Elimina los espacios en blanco alrededor de las imágenes */
+    border-radius: 15px; /* Redondea las esquinas de las imágenes */
+
+}
+
+/* Ajustes para que el carrusel no se vea distorsionado */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease; /* Efecto de transición suave */
+}
+
+.carousel-slide img {
+    border-radius: 12px; /* Bordes redondeados para cada imagen */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -70px; /* Ajusta según la altura de las imágenes */
+}
+
+.carousel-button {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px; /* Botón redondeado */
+
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8); /* Acentúa el color al pasar el mouse */
 }
