@@ -35,7 +35,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #0b6730;
     opacity: 0;
     z-index: 1;
     transition: opacity 0.5s ease-in-out;
@@ -47,13 +47,15 @@ body, html {
 
 /* Contenido centrado sobre las imágenes */
 .content {
+    width: 100%;
+    height: 100vh; /* Para que siempre ocupe la altura de la ventana */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
     z-index: 2;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
 }
 
@@ -64,7 +66,12 @@ h1 {
 }
 
 h1 span {
-    color: #FFD700;
+    color: #0b6730;
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 0.1),  
+        1px -1px 0 rgba(255, 255, 255, 0.1),
+        -1px 1px 0 rgba(255, 255, 255, 0.1),
+        1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 h3.location {
@@ -73,15 +80,32 @@ h3.location {
     font-family: 'Roboto', sans-serif;
 }
 
+.additional-text {
+    width: 100%;
+    height: 7vh; /* Para que siempre ocupe la altura de la ventana */
+    position: relative; /* O relative, según el diseño que prefieras */
+    top: 1%;
+    z-index: 3;
+    left: 0%; /* Posiciona a la derecha del contenedor .content */
+    transform: translateY(-20%); /* Centra verticalmente */
+    color: white; /* Cambia a tu color deseado */
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 /* Contact info */
 .contact-info {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 1rem 2rem;
+
 }
 
 .contact {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.359);
     padding: 1rem 2rem;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -93,11 +117,16 @@ h3.location {
 }
 
 .contact a {
-    color: #FFD700;
+    color: #0b6730;
     text-decoration: none;
     font-weight: 500;
     margin-top: 0.5rem;
     display: block;
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 0.1),  
+        1px -1px 0 rgba(255, 255, 255, 0.1),
+        -1px 1px 0 rgba(255, 255, 255, 0.1),
+        1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .contact a:hover {
@@ -106,7 +135,7 @@ h3.location {
 
 /* Sección de descripción */
 .description {
-    background-color: #175451;
+    background-color: #0b6730;
     padding: 4rem 0;
     text-align: center;
     color: #fff;
@@ -139,12 +168,6 @@ h3.location {
     margin-bottom: 0.5rem;
 }
 
-.bottom-bar .social-links a {
-    color: #FFD700;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-
 .bottom-bar .social-links a:hover {
     text-decoration: underline;
 }
@@ -170,7 +193,7 @@ h3.location {
 
 /* Estilo básico para el contenedor del carrusel */
 .carousel-container {
-    background-color: #175451;
+    background-color: #0b6730;
     width: 100%; /* Se adapta al ancho del contenedor padre */
     max-width: 1024px; /* Tamaño máximo de las imágenes */
     margin: 2rem auto; /* Centra el carrusel */
