@@ -52,7 +52,7 @@ body, html {
     width: 100%;
     height: 100vh; /* Para que siempre ocupe la altura de la ventana */
     position: absolute;
-    top: 10%;
+    top: 5%;
     z-index: 2;
     color: white;
     text-align: left;
@@ -120,6 +120,13 @@ h3.location {
         0.5px 0.5px 0 black;
 }
 
+.email-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
 /* Solid border */
 hr.solid {
     border: none;
@@ -133,7 +140,7 @@ hr.solid {
 /* Contact info */
 .contact-info {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 2rem;
     padding: 1rem ;
 
@@ -206,6 +213,7 @@ hr.solid {
     margin-bottom: 1.5rem;
     text-align: left;
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .description p span{
@@ -216,6 +224,7 @@ hr.solid {
     margin-bottom: 1.5rem;
     text-align: left;
     margin-left: 2rem;
+    
 }
 
 /* Bottom Bar */
