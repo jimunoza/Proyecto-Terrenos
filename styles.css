@@ -62,7 +62,7 @@ body, html {
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     font-weight: 700;
     padding: 1rem 2rem;
 
@@ -106,7 +106,7 @@ h3.location {
     transform: translateY(-20%); /* Centra verticalmente */
     color: fff; /* Cambia a tu color deseado */
     padding: 1rem rem;
-    font-size: 2.5rem;
+    font-size: 2.85rem;
     font-weight: 700;
     max-width: 1000px;
     margin-right: 10px;
@@ -140,7 +140,6 @@ hr.solid {
 }
 
 .contact {
-    background-color: rgba(114, 112, 112, 0.146);
     padding: 1rem 2rem;
     border-radius: 10px;
     backdrop-filter: blur(10px);
