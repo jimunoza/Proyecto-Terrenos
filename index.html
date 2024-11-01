@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Entre Parques</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/page_logo.png" type="image/png">
+    <!-- Link para CSS externo o estilos -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" />
 </head>
+
 <body>
+    <header class="topbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Sección de carrusel de imágenes -->
-    <div class="slideshow-container">
-        <div class="slide" style="background-image: url('images/image7.jpg');"></div>
-        <div class="slide" style="background-image: url('images/image12.jpg');"></div>
-        <div class="slide" style="background-image: url('images/image5.jpg');"></div>
-    </div>
-    <div id="black-fade" class="black-fade"></div>
-
-    <!-- Contenido sobrepuesto a las imágenes -->
-    <div class="content">
-        <h1><span>Entre</span>Parques</h1>
-        <div class="additional-text">
-            <p>Si quieres preservar el bosque nativo del Maule, contáctanos y conoce más acerca de nosotros.</p>
-            <h1 ><a href="mailto:visitas@entreparques.cl" class="email-link">visitas@entreparques.cl</a></h1>
-        </div>
-    </div>
-
-
-    <!-- Sección de descripción -->
-    <div class="description">
-        <div class="container">
-            <p><span>La Patagonia comienza en el Maule,</span> vive su belleza...</p>
-            <h2><span>El Maule te invita a descubrir terrenos en un entorno natural único, donde la tranquilidad y la belleza se encuentran.</span> Un lugar perfecto para quienes buscan paz y conexión con la naturaleza.</h2>
-            <p><span>Contáctanos para mayor información.</span></p>
-            
-        </div>
-        <hr class="solid"></hr>
-        <div class="contact-info">
-            <div class="contact">
-                <a href="https://wa.me/56984649437">+56 9 8464 9437</a>
-                <a href="https://wa.me/56995190189">+56 9 9519 0189</a>
+    <section id="home">
+        <div class="slideshow">
+            <div class="slideshow-text">
+                <p><span>Entre</span>Parques</p>
+                <h1>La Patagonia comienza en el Maule,<span> vive su belleza...</span></h1>
+                <p class="contact-info">visitas@entreparques.cl</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Bottom Bar al final de la página -->
+    <section id="about">
+        <div class="description">
+            <h1>
+                <span>Descubre</span> terrenos únicos en el Maule.<br>
+                Un lugar donde paz y naturaleza se encuentran.<br>
+                ¿Quieres ayudar a preservar el bosque nativo?<br>
+                <span>Contáctanos</span> y conoce más.
+            </h1>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-section">
+            <h1>Contacto</h1>
+            <p><strong>Teléfono:</strong>+56 9 8464 9437</p>
+            <p><strong>Teléfono:</strong>+56 9 9519 0189</p>
+            <p><strong>Email:</strong> visitas@entreparques.cl</p>
+        </div>
+    </section>
+
     <div class="bottom-bar">
-        <p>&copy; 2024 EntreParques. All rights reserved.</p>
+        <a href="tel:+56912345678" class="bottom-link">
+            <i class="fas fa-phone"></i> Llámanos
+        </a>
+        <a href="mailto:visitas@entreparques.cl" class="bottom-link">
+            <i class="fas fa-envelope"></i> Escríbenos
+        </a>
+        <a href="https://www.instagram.com/tuempresa" target="_blank" class="bottom-link">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://goo.gl/maps/tuubicacion" target="_blank" class="bottom-link">
+            <i class="fas fa-map-marker-alt"></i> Ubicación
+        </a>
     </div>
-
-    <script src="script.js"></script>
+    
 </body>
+
 </html>
