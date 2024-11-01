@@ -62,7 +62,7 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
-    animation: slideshow 25s ease-in-out infinite;
+    animation: slideshow 30s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
