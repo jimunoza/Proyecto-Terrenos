@@ -234,7 +234,7 @@ header {
     transform: scale(1.05);
 }
 
-/* Estilos del modal */
+/* Modal styling */
 .modal {
     display: none;
     position: fixed;
@@ -245,37 +245,48 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
     max-width: 80%;
     max-height: 80%;
     border-radius: 10px;
+    margin: 0 auto; /* Asegura que esté centrado horizontalmente */
+    display: block; /* Centra la imagen como elemento bloque */
 }
+
 
 .modal-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    color: #fff;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.prev, .next {
+.modal-nav button {
+    background-color: #36a852;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 2rem;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.modal-nav button:hover {
+    background-color: #2c8e46;
+    transform: scale(1.05);
+}
+
+.modal-nav button:active {
+    transform: scale(0.95);
 }
 
 .close {
